@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 17 16:57:49 2025" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_random" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk_port" SIGIS="undef" SIGNAME="External_Ports_clk_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dff_module1_0" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_1" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_2" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_3" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_4" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_5" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_6" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="en0_port" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nand_module_0" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_1" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_2" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_3" PORT="en0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="en1_port" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nand_module_5" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_6" PORT="en0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_port" SIGIS="undef" SIGNAME="dff_module1_4_out_dff">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dff_module1_4" PORT="out_dff"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_0" HWVERSION="1.0" INSTANCE="dff_module1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_1_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_1" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_0_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_1" HWVERSION="1.0" INSTANCE="dff_module1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_3_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_3" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_1_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_2" HWVERSION="1.0" INSTANCE="dff_module1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_8_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_8" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_2_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="z"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_3" HWVERSION="1.0" INSTANCE="dff_module1_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_7_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_7" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_3_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="w"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_4" HWVERSION="1.0" INSTANCE="dff_module1_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="xor_3_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="out_xor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_4_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_port"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_5" HWVERSION="1.0" INSTANCE="dff_module1_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_10_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_10" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_5_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_6" HWVERSION="1.0" INSTANCE="dff_module1_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_jitter_rand_12_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_12" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_6_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="z"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_0" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_0_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_0" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_0_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_1" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_1" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_0_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_0" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_1_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_0" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_0" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_10" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_10_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_9_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_9" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_10_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_5" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_5" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_11" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_11_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_6_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_6" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_11_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_12" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_12" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_12_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_11_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_11" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_12_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_6" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_6" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_2" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_1_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_1" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_2_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_3" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_3" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_2_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_2" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_3_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_1" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_1" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_4" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_2_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_2" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_4_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_5" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_5" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_4_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_4" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_5_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_8" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_6" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_3_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_3" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_6_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_7" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_7" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_6_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_6" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_7_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_3" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_3" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_8" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_8_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="inverter_jitter_rand_5_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_5" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_8_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_2" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_2" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_jitter_rand_9" HWVERSION="1.0" INSTANCE="inverter_jitter_rand_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_jitter_random" VLNV="xilinx.com:module_ref:inverter_jitter_random:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BASE_DELAY_NS" VALUE="10"/>
+        <PARAMETER NAME="JITTER_NS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_jitter_rand_9_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_sig" SIGIS="undef" SIGNAME="nand_module_5_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_5" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="inv_out" SIGIS="undef" SIGNAME="inverter_jitter_rand_9_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_10" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_0" HWVERSION="1.0" INSTANCE="nand_module_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_1_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_1" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_0_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_0" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_1" HWVERSION="1.0" INSTANCE="nand_module_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_3_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_3" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_1_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_2" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_2" HWVERSION="1.0" INSTANCE="nand_module_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_8_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_8" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_2_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_4" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_3" HWVERSION="1.0" INSTANCE="nand_module_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_7_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_7" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_3_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_6" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_5" HWVERSION="1.0" INSTANCE="nand_module_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en1_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_10_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_10" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_5_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_9" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_6" HWVERSION="1.0" INSTANCE="nand_module_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en1_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_jitter_rand_12_inv_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_12" PORT="inv_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_6_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_jitter_rand_11" PORT="in_sig"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xor_3_0" HWVERSION="1.0" INSTANCE="xor_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xor_3" VLNV="xilinx.com:module_ref:xor_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_xor_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="out_xor" SIGIS="undef" SIGNAME="xor_3_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_4" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="dff_module1_5_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_5" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="xor_4_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="out_xor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="z" SIGIS="undef" SIGNAME="dff_module1_6_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_6" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xor_4_0" HWVERSION="1.0" INSTANCE="xor_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xor_4" VLNV="xilinx.com:module_ref:xor_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_xor_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="out_xor" SIGIS="undef" SIGNAME="xor_4_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="w" SIGIS="undef" SIGNAME="dff_module1_3_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_3" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="dff_module1_0_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_0" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="dff_module1_1_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_1" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="z" SIGIS="undef" SIGNAME="dff_module1_2_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_2" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

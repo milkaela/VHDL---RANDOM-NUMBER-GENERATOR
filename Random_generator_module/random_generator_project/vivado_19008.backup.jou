@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Dec 17 09:05:54 2025
+# Process ID         : 19008
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3452 C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.xpr
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/vivado.log
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 17376 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins inverter_jitter_4/inv_out] [get_bd_pins inverter_jitter_1/in_sig]
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_dff_1_0 design_random_dff_6_0 design_random_dff_0_0 design_random_dff_3_0 design_random_dff_2_0 design_random_xor_3_0_0 design_random_dff_5_0 design_random_dff_4_0 design_random_xor_4_0_0}]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_nand_module_0_0 design_random_nand_module_2_0 design_random_nand_module_5_0 design_random_nand_module_1_0 design_random_nand_module_6_0 design_random_nand_module_3_0}]
+connect_bd_net [get_bd_pins nand_module_0/out_nand] [get_bd_pins inverter_jitter_0/in_sig]
+connect_bd_net [get_bd_pins nand_module_1/out_nand] [get_bd_pins inverter_jitter_6/in_sig]
+connect_bd_net [get_bd_pins inverter_jitter_2/inv_out] [get_bd_pins dff_0/in_dff]
+connect_bd_net [get_bd_pins inverter_jitter_7/inv_out] [get_bd_pins dff_1/in_dff]
+connect_bd_net [get_bd_pins inverter_jitter_2/inv_out] [get_bd_pins nand_module_0/in_nand]
+connect_bd_net [get_bd_pins inverter_jitter_7/inv_out] [get_bd_pins nand_module_1/in_nand]
+connect_bd_net [get_bd_pins nand_module_2/out_nand] [get_bd_pins inverter_jitter_3/in_sig]
+connect_bd_net [get_bd_pins nand_module_3/out_nand] [get_bd_pins inverter_jitter_5/in_sig]
+connect_bd_net [get_bd_pins inverter_jitter_8/inv_out] [get_bd_pins dff_2/in_dff]
+connect_bd_net [get_bd_pins inverter_jitter_1/inv_out] [get_bd_pins dff_3/in_dff]
+connect_bd_net [get_bd_pins inverter_jitter_1/inv_out] [get_bd_pins nand_module_2/in_nand]
+connect_bd_net [get_bd_pins inverter_jitter_8/inv_out] [get_bd_pins nand_module_3/in_nand]
+connect_bd_net [get_bd_pins dff_0/out_dff] [get_bd_pins xor_4_0/x]
+connect_bd_net [get_bd_pins dff_1/out_dff] [get_bd_pins xor_4_0/y]
+connect_bd_net [get_bd_pins dff_3/out_dff] [get_bd_pins xor_4_0/z]
+connect_bd_net [get_bd_pins dff_2/out_dff] [get_bd_pins xor_4_0/w]
+connect_bd_net [get_bd_pins nand_module_6/out_nand] [get_bd_pins inverter_jitter_12/in_sig]
+connect_bd_net [get_bd_pins inverter_jitter_10/inv_out] [get_bd_pins dff_5/in_dff]
+connect_bd_net [get_bd_pins nand_module_5/out_nand] [get_bd_pins inverter_jitter_9/in_sig]
+connect_bd_net [get_bd_pins inverter_jitter_11/inv_out] [get_bd_pins dff_4/in_dff]
+connect_bd_net [get_bd_pins inverter_jitter_11/inv_out] [get_bd_pins nand_module_5/in_nand]
+connect_bd_net [get_bd_pins dff_4/out_dff] [get_bd_pins xor_3_0/x]
+connect_bd_net [get_bd_pins xor_4_0/out_xor] [get_bd_pins xor_3_0/y]
+connect_bd_net [get_bd_pins dff_5/out_dff] [get_bd_pins xor_3_0/z]
+connect_bd_net [get_bd_pins xor_3_0/out_xor] [get_bd_pins dff_6/in_dff]
+connect_bd_net [get_bd_ports out_port] [get_bd_pins dff_6/out_dff]
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins inverter_jitter_10/inv_out] [get_bd_pins nand_module_6/in_nand]
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -directory C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files -ipstatic_source_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/modelsim} {questa=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/questa} {riviera=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/riviera} {activehdl=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb_design_random.tcl
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_design_random.tcl
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+close_sim
+launch_simulation
+source tb_design_random.tcl
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+update_module_reference [get_ips  design_random_xor_3_0_0]
+close_sim
+launch_simulation
+source tb_design_random.tcl
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+generate_target Simulation [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -directory C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files -ipstatic_source_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/modelsim} {questa=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/questa} {riviera=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/riviera} {activehdl=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb.tcl
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+close_sim
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb_design_random.tcl
+close_sim
+launch_simulation
+source tb_design_random.tcl
+pwd
+close_sim
+launch_simulation
+source tb_design_random.tcl
+close_sim
+launch_simulation
+source tb_design_random.tcl
+restart
+run 10000ns
+run 10000ns
+run 1000000ns
+restart
+run 1000000ns
+restart
+run 1000000ns
+restart
+run 1000000ns
+run 10000000000ns
+restart
+run 1000000000ns
+close_sim
+restart
+run 1000000000ns
+launch_simulation
+source tb_design_random.tcl
+run 1000000000ns
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_design_random.tcl
+restart
+run 1000000000ns
+restart
+run 1000000000ns
+close_sim
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_design_random.tcl
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_design_random.tcl
+restart
+run 1000000000ns
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+close_sim
+launch_simulation
+source tb_design_random.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v
+file delete -force C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v w ]
+add_files -fileset sim_1 C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_design_random [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+create_bd_cell -type module -reference inverter_jitter_random inverter_jitter_rand_0
+close_sim

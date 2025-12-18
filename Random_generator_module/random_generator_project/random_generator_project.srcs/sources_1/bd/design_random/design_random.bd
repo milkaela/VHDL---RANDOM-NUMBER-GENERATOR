@@ -1,0 +1,885 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE8514482F896E1B6",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../random_generator_project.gen/sources_1/bd/design_random",
+      "name": "design_random",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "nand_module_0": "",
+      "nand_module_1": "",
+      "nand_module_2": "",
+      "nand_module_3": "",
+      "xor_4_0": "",
+      "nand_module_5": "",
+      "nand_module_6": "",
+      "xor_3_0": "",
+      "inverter_jitter_rand_0": "",
+      "inverter_jitter_rand_1": "",
+      "inverter_jitter_rand_2": "",
+      "inverter_jitter_rand_3": "",
+      "inverter_jitter_rand_4": "",
+      "inverter_jitter_rand_5": "",
+      "inverter_jitter_rand_6": "",
+      "inverter_jitter_rand_7": "",
+      "inverter_jitter_rand_8": "",
+      "inverter_jitter_rand_9": "",
+      "inverter_jitter_rand_10": "",
+      "inverter_jitter_rand_11": "",
+      "inverter_jitter_rand_12": "",
+      "dff_module1_0": "",
+      "dff_module1_1": "",
+      "dff_module1_2": "",
+      "dff_module1_3": "",
+      "dff_module1_4": "",
+      "dff_module1_5": "",
+      "dff_module1_6": ""
+    },
+    "ports": {
+      "en0_port": {
+        "direction": "I"
+      },
+      "clk_port": {
+        "direction": "I"
+      },
+      "en1_port": {
+        "direction": "I"
+      },
+      "out_port": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "nand_module_0": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_0_0",
+        "xci_path": "ip\\design_random_nand_module_0_0\\design_random_nand_module_0_0.xci",
+        "inst_hier_path": "nand_module_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "nand_module_1": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_1_0",
+        "xci_path": "ip\\design_random_nand_module_1_0\\design_random_nand_module_1_0.xci",
+        "inst_hier_path": "nand_module_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "nand_module_2": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_2_0",
+        "xci_path": "ip\\design_random_nand_module_2_0\\design_random_nand_module_2_0.xci",
+        "inst_hier_path": "nand_module_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "nand_module_3": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_3_0",
+        "xci_path": "ip\\design_random_nand_module_3_0\\design_random_nand_module_3_0.xci",
+        "inst_hier_path": "nand_module_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "xor_4_0": {
+        "vlnv": "xilinx.com:module_ref:xor_4:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_xor_4_0_0",
+        "xci_path": "ip\\design_random_xor_4_0_0\\design_random_xor_4_0_0.xci",
+        "inst_hier_path": "xor_4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "I"
+          },
+          "z": {
+            "direction": "I"
+          },
+          "w": {
+            "direction": "I"
+          },
+          "out_xor": {
+            "direction": "O"
+          }
+        }
+      },
+      "nand_module_5": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_5_0",
+        "xci_path": "ip\\design_random_nand_module_5_0\\design_random_nand_module_5_0.xci",
+        "inst_hier_path": "nand_module_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "nand_module_6": {
+        "vlnv": "xilinx.com:module_ref:nand_module:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_nand_module_6_0",
+        "xci_path": "ip\\design_random_nand_module_6_0\\design_random_nand_module_6_0.xci",
+        "inst_hier_path": "nand_module_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "nand_module",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_nand": {
+            "direction": "I"
+          },
+          "en0": {
+            "direction": "I"
+          },
+          "out_nand": {
+            "direction": "O"
+          }
+        }
+      },
+      "xor_3_0": {
+        "vlnv": "xilinx.com:module_ref:xor_3:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_xor_3_0_0",
+        "xci_path": "ip\\design_random_xor_3_0_0\\design_random_xor_3_0_0.xci",
+        "inst_hier_path": "xor_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "I"
+          },
+          "z": {
+            "direction": "I"
+          },
+          "out_xor": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_0": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_0_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_0_0\\design_random_inverter_jitter_rand_0_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_1": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_1_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_1_0\\design_random_inverter_jitter_rand_1_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_2": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_2_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_2_0\\design_random_inverter_jitter_rand_2_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_3": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_3_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_3_0\\design_random_inverter_jitter_rand_3_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_4": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_4_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_4_0\\design_random_inverter_jitter_rand_4_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_5": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_5_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_5_0\\design_random_inverter_jitter_rand_5_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_6": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_6_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_6_0\\design_random_inverter_jitter_rand_6_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_7": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_7_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_7_0\\design_random_inverter_jitter_rand_7_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_7",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_8": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_8_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_8_0\\design_random_inverter_jitter_rand_8_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_8",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_9": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_9_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_9_0\\design_random_inverter_jitter_rand_9_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_9",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_10": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_10_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_10_0\\design_random_inverter_jitter_rand_10_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_10",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_11": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_11_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_11_0\\design_random_inverter_jitter_rand_11_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_11",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "inverter_jitter_rand_12": {
+        "vlnv": "xilinx.com:module_ref:inverter_jitter_random:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_inverter_jitter_rand_12_0",
+        "xci_path": "ip\\design_random_inverter_jitter_rand_12_0\\design_random_inverter_jitter_rand_12_0.xci",
+        "inst_hier_path": "inverter_jitter_rand_12",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter_jitter_random",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_sig": {
+            "direction": "I"
+          },
+          "inv_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_0": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_0_0",
+        "xci_path": "ip\\design_random_dff_module1_0_0\\design_random_dff_module1_0_0.xci",
+        "inst_hier_path": "dff_module1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_1": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_1_0",
+        "xci_path": "ip\\design_random_dff_module1_1_0\\design_random_dff_module1_1_0.xci",
+        "inst_hier_path": "dff_module1_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_2": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_2_0",
+        "xci_path": "ip\\design_random_dff_module1_2_0\\design_random_dff_module1_2_0.xci",
+        "inst_hier_path": "dff_module1_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_3": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_3_0",
+        "xci_path": "ip\\design_random_dff_module1_3_0\\design_random_dff_module1_3_0.xci",
+        "inst_hier_path": "dff_module1_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_4": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_4_0",
+        "xci_path": "ip\\design_random_dff_module1_4_0\\design_random_dff_module1_4_0.xci",
+        "inst_hier_path": "dff_module1_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_5": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_5_0",
+        "xci_path": "ip\\design_random_dff_module1_5_0\\design_random_dff_module1_5_0.xci",
+        "inst_hier_path": "dff_module1_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      },
+      "dff_module1_6": {
+        "vlnv": "xilinx.com:module_ref:dff_module1:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_random_dff_module1_6_0",
+        "xci_path": "ip\\design_random_dff_module1_6_0\\design_random_dff_module1_6_0.xci",
+        "inst_hier_path": "dff_module1_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dff_module1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in_dff": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "out_dff": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_port_1": {
+        "ports": [
+          "clk_port",
+          "dff_module1_0/clk",
+          "dff_module1_1/clk",
+          "dff_module1_2/clk",
+          "dff_module1_3/clk",
+          "dff_module1_4/clk",
+          "dff_module1_5/clk",
+          "dff_module1_6/clk"
+        ]
+      },
+      "dff_module1_0_out_dff": {
+        "ports": [
+          "dff_module1_0/out_dff",
+          "xor_4_0/x"
+        ]
+      },
+      "dff_module1_1_out_dff": {
+        "ports": [
+          "dff_module1_1/out_dff",
+          "xor_4_0/y"
+        ]
+      },
+      "dff_module1_2_out_dff": {
+        "ports": [
+          "dff_module1_2/out_dff",
+          "xor_4_0/z"
+        ]
+      },
+      "dff_module1_3_out_dff": {
+        "ports": [
+          "dff_module1_3/out_dff",
+          "xor_4_0/w"
+        ]
+      },
+      "dff_module1_4_out_dff": {
+        "ports": [
+          "dff_module1_4/out_dff",
+          "out_port"
+        ]
+      },
+      "dff_module1_5_out_dff": {
+        "ports": [
+          "dff_module1_5/out_dff",
+          "xor_3_0/x"
+        ]
+      },
+      "dff_module1_6_out_dff": {
+        "ports": [
+          "dff_module1_6/out_dff",
+          "xor_3_0/z"
+        ]
+      },
+      "en0_port_1": {
+        "ports": [
+          "en0_port",
+          "nand_module_0/en0",
+          "nand_module_1/en0",
+          "nand_module_2/en0",
+          "nand_module_3/en0"
+        ]
+      },
+      "en1_port_1": {
+        "ports": [
+          "en1_port",
+          "nand_module_5/en0",
+          "nand_module_6/en0"
+        ]
+      },
+      "inverter_jitter_10_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_12/inv_out",
+          "nand_module_6/in_nand",
+          "dff_module1_6/in_dff"
+        ]
+      },
+      "inverter_jitter_11_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_10/inv_out",
+          "nand_module_5/in_nand",
+          "dff_module1_5/in_dff"
+        ]
+      },
+      "inverter_jitter_2_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_1/inv_out",
+          "nand_module_0/in_nand",
+          "dff_module1_0/in_dff"
+        ]
+      },
+      "inverter_jitter_7_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_3/inv_out",
+          "nand_module_1/in_nand",
+          "dff_module1_1/in_dff"
+        ]
+      },
+      "inverter_jitter_rand_0_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_0/inv_out",
+          "inverter_jitter_rand_1/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_11_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_11/inv_out",
+          "inverter_jitter_rand_12/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_2_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_2/inv_out",
+          "inverter_jitter_rand_3/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_4_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_4/inv_out",
+          "inverter_jitter_rand_5/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_5_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_5/inv_out",
+          "inverter_jitter_rand_8/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_6_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_6/inv_out",
+          "inverter_jitter_rand_7/in_sig"
+        ]
+      },
+      "inverter_jitter_rand_7_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_7/inv_out",
+          "nand_module_3/in_nand",
+          "dff_module1_3/in_dff"
+        ]
+      },
+      "inverter_jitter_rand_8_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_8/inv_out",
+          "nand_module_2/in_nand",
+          "dff_module1_2/in_dff"
+        ]
+      },
+      "inverter_jitter_rand_9_inv_out": {
+        "ports": [
+          "inverter_jitter_rand_9/inv_out",
+          "inverter_jitter_rand_10/in_sig"
+        ]
+      },
+      "nand_module_0_out_nand": {
+        "ports": [
+          "nand_module_0/out_nand",
+          "inverter_jitter_rand_0/in_sig"
+        ]
+      },
+      "nand_module_1_out_nand": {
+        "ports": [
+          "nand_module_1/out_nand",
+          "inverter_jitter_rand_2/in_sig"
+        ]
+      },
+      "nand_module_2_out_nand": {
+        "ports": [
+          "nand_module_2/out_nand",
+          "inverter_jitter_rand_4/in_sig"
+        ]
+      },
+      "nand_module_3_out_nand": {
+        "ports": [
+          "nand_module_3/out_nand",
+          "inverter_jitter_rand_6/in_sig"
+        ]
+      },
+      "nand_module_5_out_nand": {
+        "ports": [
+          "nand_module_5/out_nand",
+          "inverter_jitter_rand_9/in_sig"
+        ]
+      },
+      "nand_module_6_out_nand": {
+        "ports": [
+          "nand_module_6/out_nand",
+          "inverter_jitter_rand_11/in_sig"
+        ]
+      },
+      "xor_3_0_out_xor": {
+        "ports": [
+          "xor_3_0/out_xor",
+          "dff_module1_4/in_dff"
+        ]
+      },
+      "xor_4_0_out": {
+        "ports": [
+          "xor_4_0/out_xor",
+          "xor_3_0/y"
+        ]
+      }
+    }
+  }
+}
