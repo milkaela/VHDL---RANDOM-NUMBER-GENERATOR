@@ -1,0 +1,75 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.670875",
+   "Default View_TopLeft":"194,-341",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_en0_port -pg 1 -lvl 0 -x -280 -y -310 -defaultsOSRD
+preplace port port-id_clk_port -pg 1 -lvl 0 -x -280 -y -90 -defaultsOSRD
+preplace port port-id_en1_port -pg 1 -lvl 5 -x 970 -y 140 -defaultsOSRD -bot
+preplace port port-id_out_port -pg 1 -lvl 13 -x 2560 -y -270 -defaultsOSRD
+preplace inst nand_module_0 -pg 1 -lvl 1 -x 10 -y -470 -defaultsOSRD
+preplace inst nand_module_1 -pg 1 -lvl 1 -x 10 -y -340 -defaultsOSRD
+preplace inst nand_module_2 -pg 1 -lvl 1 -x 10 -y -120 -defaultsOSRD
+preplace inst nand_module_3 -pg 1 -lvl 1 -x 10 -y 0 -defaultsOSRD
+preplace inst xor_4_0 -pg 1 -lvl 6 -x 1130 -y -250 -defaultsOSRD
+preplace inst nand_module_5 -pg 1 -lvl 7 -x 1350 -y -440 -defaultsOSRD
+preplace inst nand_module_6 -pg 1 -lvl 7 -x 1350 -y -90 -defaultsOSRD
+preplace inst xor_3_0 -pg 1 -lvl 11 -x 2220 -y -290 -defaultsOSRD
+preplace inst dff_module1_0 -pg 1 -lvl 4 -x 680 -y -470 -defaultsOSRD
+preplace inst dff_module1_1 -pg 1 -lvl 4 -x 680 -y -310 -defaultsOSRD
+preplace inst dff_module1_2 -pg 1 -lvl 5 -x 920 -y -50 -defaultsOSRD
+preplace inst dff_module1_3 -pg 1 -lvl 4 -x 680 -y 50 -defaultsOSRD
+preplace inst dff_module1_4 -pg 1 -lvl 12 -x 2430 -y -260 -defaultsOSRD
+preplace inst dff_module1_5 -pg 1 -lvl 10 -x 2020 -y -390 -defaultsOSRD
+preplace inst dff_module1_6 -pg 1 -lvl 10 -x 2020 -y -60 -defaultsOSRD
+preplace inst inverter_real_0 -pg 1 -lvl 2 -x 240 -y -470 -defaultsOSRD
+preplace inst inverter_real_1 -pg 1 -lvl 3 -x 460 -y -470 -defaultsOSRD
+preplace inst inverter_real_2 -pg 1 -lvl 2 -x 240 -y -340 -defaultsOSRD
+preplace inst inverter_real_3 -pg 1 -lvl 3 -x 460 -y -340 -defaultsOSRD
+preplace inst inverter_real_4 -pg 1 -lvl 2 -x 240 -y -120 -defaultsOSRD
+preplace inst inverter_real_5 -pg 1 -lvl 3 -x 460 -y -120 -defaultsOSRD
+preplace inst inverter_real_6 -pg 1 -lvl 4 -x 680 -y -100 -defaultsOSRD
+preplace inst inverter_real_7 -pg 1 -lvl 2 -x 240 -y 10 -defaultsOSRD
+preplace inst inverter_real_8 -pg 1 -lvl 3 -x 460 -y 10 -defaultsOSRD
+preplace inst inverter_real_9 -pg 1 -lvl 8 -x 1570 -y -440 -defaultsOSRD
+preplace inst inverter_real_10 -pg 1 -lvl 9 -x 1790 -y -430 -defaultsOSRD
+preplace inst inverter_real_11 -pg 1 -lvl 8 -x 1570 -y -90 -defaultsOSRD
+preplace inst inverter_real_12 -pg 1 -lvl 9 -x 1790 -y -90 -defaultsOSRD
+preplace netloc clk_port_1 1 0 12 -260J 70 130J -550 350J -550 580 -170 780 -160 N -160 N -160 1460 -260 1680 -260 1920 -210 N -210 2310
+preplace netloc dff_module1_0_out_dff 1 4 2 NJ -470 1030
+preplace netloc dff_module1_1_out_dff 1 4 2 NJ -310 1020
+preplace netloc dff_module1_2_out_dff 1 5 1 1030 -240n
+preplace netloc dff_module1_3_out_dff 1 4 2 790 -220 NJ
+preplace netloc dff_module1_4_out_dff 1 12 1 2530 -270n
+preplace netloc dff_module1_5_out_dff 1 10 1 2120 -390n
+preplace netloc dff_module1_6_out_dff 1 10 1 2120 -270n
+preplace netloc en0_port_1 1 0 1 -120 -460n
+preplace netloc en1_port_1 1 5 2 1030 16 1230J
+preplace netloc inverter_jitter_10_inv_out 1 6 4 1240 -20 N -20 N -20 1890
+preplace netloc inverter_jitter_11_inv_out 1 6 4 1240 -510 N -510 N -510 1900
+preplace netloc inverter_jitter_2_inv_out 1 0 4 -100 -540 N -540 N -540 560
+preplace netloc inverter_jitter_7_inv_out 1 0 4 -100 -270 N -270 N -270 560
+preplace netloc inverter_jitter_rand_7_inv_out 1 0 4 -110 -200 N -200 N -200 570
+preplace netloc inverter_jitter_rand_8_inv_out 1 0 5 -100 -190 N -190 N -190 N -190 800
+preplace netloc inverter_real_0_out_inv 1 2 1 340 -480n
+preplace netloc inverter_real_11_out_inv 1 8 1 1690 -100n
+preplace netloc inverter_real_2_out_inv 1 2 1 340 -350n
+preplace netloc inverter_real_4_out_inv 1 2 1 360 -130n
+preplace netloc inverter_real_5_out_inv 1 3 1 560 -120n
+preplace netloc inverter_real_7_out_inv 1 2 1 360 0n
+preplace netloc inverter_real_9_out_inv 1 8 1 N -440
+preplace netloc nand_module_0_out_nand 1 1 1 120 -480n
+preplace netloc nand_module_1_out_nand 1 1 1 140 -350n
+preplace netloc nand_module_2_out_nand 1 1 1 140 -130n
+preplace netloc nand_module_3_out_nand 1 1 1 N 0
+preplace netloc nand_module_5_out_nand 1 7 1 1460 -450n
+preplace netloc nand_module_6_out_nand 1 7 1 1470 -100n
+preplace netloc xor_3_0_out_xor 1 11 1 2310 -290n
+preplace netloc xor_4_0_out 1 6 5 N -250 N -250 N -250 1890 -290 N
+levelinfo -pg 1 -280 10 240 460 680 920 1130 1350 1570 1790 2020 2220 2430 2560
+pagesize -pg 1 -db -bbox -sgen -390 -640 2670 240
+"
+}
+0

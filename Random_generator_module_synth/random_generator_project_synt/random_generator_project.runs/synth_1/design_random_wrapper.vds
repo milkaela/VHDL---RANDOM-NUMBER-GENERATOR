@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 19 19:28:36 2025
+# Process ID         : 21512
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1
+# Command line       : vivado.exe -log design_random_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_random_wrapper.tcl
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/design_random_wrapper.vds
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 9885 MB
+#-----------------------------------------------------------
+source design_random_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/utils_1/imports/synth_1/design_random_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/utils_1/imports/synth_1/design_random_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_random_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10968
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1084.945 ; gain = 470.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_random_wrapper' [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_random' [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_0_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_0_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_1_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_1_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_2_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_2_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_3_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_3_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_4_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_4_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_5_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_5_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_dff_module1_6_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_dff_module1_6_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_dff_module1_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_0_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_0_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_1_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_1_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_10_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_10_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_11_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_11_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_11_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_11_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_12_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_12_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_12_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_12_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_2_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_2_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_3_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_3_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_4_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_4_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_5_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_5_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_6_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_6_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_7_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_7_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_7_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_8_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_8_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_8_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_8_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_inverter_real_9_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_9_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_inverter_real_9_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_inverter_real_9_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_0_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_0_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_1_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_1_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_2_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_2_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_3_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_3_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_5_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_5_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_nand_module_6_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_nand_module_6_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_nand_module_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_xor_3_0_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_xor_3_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_xor_3_0_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_xor_3_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_random_xor_4_0_0' [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_xor_4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_xor_4_0_0' (0#1) [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/.Xil/Vivado-21512-DESKTOP-1986M2J/realtime/design_random_xor_4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_random' (0#1) [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_random_wrapper' (0#1) [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.391 ; gain = 574.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1189.391 ; gain = 574.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1189.391 ; gain = 574.805
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1189.391 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_0_0/design_random_nand_module_0_0/design_random_nand_module_0_0_in_context.xdc] for cell 'design_random_i/nand_module_0'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_0_0/design_random_nand_module_0_0/design_random_nand_module_0_0_in_context.xdc] for cell 'design_random_i/nand_module_0'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_1_0/design_random_nand_module_1_0/design_random_nand_module_1_0_in_context.xdc] for cell 'design_random_i/nand_module_1'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_1_0/design_random_nand_module_1_0/design_random_nand_module_1_0_in_context.xdc] for cell 'design_random_i/nand_module_1'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_2_0/design_random_nand_module_2_0/design_random_nand_module_2_0_in_context.xdc] for cell 'design_random_i/nand_module_2'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_2_0/design_random_nand_module_2_0/design_random_nand_module_2_0_in_context.xdc] for cell 'design_random_i/nand_module_2'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_3_0/design_random_nand_module_3_0/design_random_nand_module_3_0_in_context.xdc] for cell 'design_random_i/nand_module_3'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_3_0/design_random_nand_module_3_0/design_random_nand_module_3_0_in_context.xdc] for cell 'design_random_i/nand_module_3'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_4_0_0/design_random_xor_4_0_0/design_random_xor_4_0_0_in_context.xdc] for cell 'design_random_i/xor_4_0'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_4_0_0/design_random_xor_4_0_0/design_random_xor_4_0_0_in_context.xdc] for cell 'design_random_i/xor_4_0'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_5_0/design_random_nand_module_5_0/design_random_nand_module_5_0_in_context.xdc] for cell 'design_random_i/nand_module_5'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_5_0/design_random_nand_module_5_0/design_random_nand_module_5_0_in_context.xdc] for cell 'design_random_i/nand_module_5'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_6_0/design_random_nand_module_6_0/design_random_nand_module_6_0_in_context.xdc] for cell 'design_random_i/nand_module_6'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_6_0/design_random_nand_module_6_0/design_random_nand_module_6_0_in_context.xdc] for cell 'design_random_i/nand_module_6'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_3_0_0/design_random_xor_3_0_0/design_random_xor_3_0_0_in_context.xdc] for cell 'design_random_i/xor_3_0'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_3_0_0/design_random_xor_3_0_0/design_random_xor_3_0_0_in_context.xdc] for cell 'design_random_i/xor_3_0'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_0_0/design_random_dff_module1_0_0/design_random_dff_module1_0_0_in_context.xdc] for cell 'design_random_i/dff_module1_0'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_0_0/design_random_dff_module1_0_0/design_random_dff_module1_0_0_in_context.xdc] for cell 'design_random_i/dff_module1_0'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_1_0/design_random_dff_module1_1_0/design_random_dff_module1_1_0_in_context.xdc] for cell 'design_random_i/dff_module1_1'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_1_0/design_random_dff_module1_1_0/design_random_dff_module1_1_0_in_context.xdc] for cell 'design_random_i/dff_module1_1'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_2_0/design_random_dff_module1_2_0/design_random_dff_module1_2_0_in_context.xdc] for cell 'design_random_i/dff_module1_2'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_2_0/design_random_dff_module1_2_0/design_random_dff_module1_2_0_in_context.xdc] for cell 'design_random_i/dff_module1_2'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_3_0/design_random_dff_module1_3_0/design_random_dff_module1_3_0_in_context.xdc] for cell 'design_random_i/dff_module1_3'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_3_0/design_random_dff_module1_3_0/design_random_dff_module1_3_0_in_context.xdc] for cell 'design_random_i/dff_module1_3'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_4_0/design_random_dff_module1_4_0/design_random_dff_module1_4_0_in_context.xdc] for cell 'design_random_i/dff_module1_4'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_4_0/design_random_dff_module1_4_0/design_random_dff_module1_4_0_in_context.xdc] for cell 'design_random_i/dff_module1_4'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_5_0/design_random_dff_module1_5_0/design_random_dff_module1_5_0_in_context.xdc] for cell 'design_random_i/dff_module1_5'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_5_0/design_random_dff_module1_5_0/design_random_dff_module1_5_0_in_context.xdc] for cell 'design_random_i/dff_module1_5'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_6_0/design_random_dff_module1_6_0/design_random_dff_module1_6_0_in_context.xdc] for cell 'design_random_i/dff_module1_6'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_6_0/design_random_dff_module1_6_0/design_random_dff_module1_6_0_in_context.xdc] for cell 'design_random_i/dff_module1_6'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_0_0/design_random_inverter_real_0_0/design_random_inverter_real_0_0_in_context.xdc] for cell 'design_random_i/inverter_real_0'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_0_0/design_random_inverter_real_0_0/design_random_inverter_real_0_0_in_context.xdc] for cell 'design_random_i/inverter_real_0'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_1_0/design_random_inverter_real_1_0/design_random_inverter_real_1_0_in_context.xdc] for cell 'design_random_i/inverter_real_1'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_1_0/design_random_inverter_real_1_0/design_random_inverter_real_1_0_in_context.xdc] for cell 'design_random_i/inverter_real_1'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_2_0/design_random_inverter_real_2_0/design_random_inverter_real_2_0_in_context.xdc] for cell 'design_random_i/inverter_real_2'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_2_0/design_random_inverter_real_2_0/design_random_inverter_real_2_0_in_context.xdc] for cell 'design_random_i/inverter_real_2'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_3_0/design_random_inverter_real_3_0/design_random_inverter_real_3_0_in_context.xdc] for cell 'design_random_i/inverter_real_3'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_3_0/design_random_inverter_real_3_0/design_random_inverter_real_3_0_in_context.xdc] for cell 'design_random_i/inverter_real_3'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_4_0/design_random_inverter_real_4_0/design_random_inverter_real_4_0_in_context.xdc] for cell 'design_random_i/inverter_real_4'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_4_0/design_random_inverter_real_4_0/design_random_inverter_real_4_0_in_context.xdc] for cell 'design_random_i/inverter_real_4'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_5_0/design_random_inverter_real_5_0/design_random_inverter_real_5_0_in_context.xdc] for cell 'design_random_i/inverter_real_5'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_5_0/design_random_inverter_real_5_0/design_random_inverter_real_5_0_in_context.xdc] for cell 'design_random_i/inverter_real_5'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_6_0/design_random_inverter_real_6_0/design_random_inverter_real_6_0_in_context.xdc] for cell 'design_random_i/inverter_real_6'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_6_0/design_random_inverter_real_6_0/design_random_inverter_real_6_0_in_context.xdc] for cell 'design_random_i/inverter_real_6'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_7_0/design_random_inverter_real_7_0/design_random_inverter_real_7_0_in_context.xdc] for cell 'design_random_i/inverter_real_7'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_7_0/design_random_inverter_real_7_0/design_random_inverter_real_7_0_in_context.xdc] for cell 'design_random_i/inverter_real_7'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_8_0/design_random_inverter_real_8_0/design_random_inverter_real_8_0_in_context.xdc] for cell 'design_random_i/inverter_real_8'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_8_0/design_random_inverter_real_8_0/design_random_inverter_real_8_0_in_context.xdc] for cell 'design_random_i/inverter_real_8'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_9_0/design_random_inverter_real_9_0/design_random_inverter_real_9_0_in_context.xdc] for cell 'design_random_i/inverter_real_9'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_9_0/design_random_inverter_real_9_0/design_random_inverter_real_9_0_in_context.xdc] for cell 'design_random_i/inverter_real_9'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_10_0/design_random_inverter_real_10_0/design_random_inverter_real_10_0_in_context.xdc] for cell 'design_random_i/inverter_real_10'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_10_0/design_random_inverter_real_10_0/design_random_inverter_real_10_0_in_context.xdc] for cell 'design_random_i/inverter_real_10'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_11_0/design_random_inverter_real_11_0/design_random_inverter_real_11_0_in_context.xdc] for cell 'design_random_i/inverter_real_11'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_11_0/design_random_inverter_real_11_0/design_random_inverter_real_11_0_in_context.xdc] for cell 'design_random_i/inverter_real_11'
+Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_12_0/design_random_inverter_real_12_0/design_random_inverter_real_12_0_in_context.xdc] for cell 'design_random_i/inverter_real_12'
+Finished Parsing XDC File [c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_12_0/design_random_inverter_real_12_0/design_random_inverter_real_12_0_in_context.xdc] for cell 'design_random_i/inverter_real_12'
+Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_random_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_random_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1192.125 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.125 ; gain = 577.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.125 ; gain = 577.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/xor_4_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/nand_module_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/xor_3_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/dff_module1_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_random_i/inverter_real_12. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.125 ; gain = 577.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.125 ; gain = 577.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1193.949 ; gain = 579.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.348 ; gain = 750.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1365.348 ; gain = 750.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1374.938 ; gain = 760.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |design_random_dff_module1_0_0    |         1|
+|2     |design_random_dff_module1_1_0    |         1|
+|3     |design_random_dff_module1_2_0    |         1|
+|4     |design_random_dff_module1_3_0    |         1|
+|5     |design_random_dff_module1_4_0    |         1|
+|6     |design_random_dff_module1_5_0    |         1|
+|7     |design_random_dff_module1_6_0    |         1|
+|8     |design_random_inverter_real_0_0  |         1|
+|9     |design_random_inverter_real_1_0  |         1|
+|10    |design_random_inverter_real_10_0 |         1|
+|11    |design_random_inverter_real_11_0 |         1|
+|12    |design_random_inverter_real_12_0 |         1|
+|13    |design_random_inverter_real_2_0  |         1|
+|14    |design_random_inverter_real_3_0  |         1|
+|15    |design_random_inverter_real_4_0  |         1|
+|16    |design_random_inverter_real_5_0  |         1|
+|17    |design_random_inverter_real_6_0  |         1|
+|18    |design_random_inverter_real_7_0  |         1|
+|19    |design_random_inverter_real_8_0  |         1|
+|20    |design_random_inverter_real_9_0  |         1|
+|21    |design_random_nand_module_0_0    |         1|
+|22    |design_random_nand_module_1_0    |         1|
+|23    |design_random_nand_module_2_0    |         1|
+|24    |design_random_nand_module_3_0    |         1|
+|25    |design_random_nand_module_5_0    |         1|
+|26    |design_random_nand_module_6_0    |         1|
+|27    |design_random_xor_3_0_0          |         1|
+|28    |design_random_xor_4_0_0          |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |design_random_dff_module1_0    |     1|
+|2     |design_random_dff_module1_1    |     1|
+|3     |design_random_dff_module1_2    |     1|
+|4     |design_random_dff_module1_3    |     1|
+|5     |design_random_dff_module1_4    |     1|
+|6     |design_random_dff_module1_5    |     1|
+|7     |design_random_dff_module1_6    |     1|
+|8     |design_random_inverter_real_0  |     1|
+|9     |design_random_inverter_real_10 |     1|
+|10    |design_random_inverter_real_11 |     1|
+|11    |design_random_inverter_real_12 |     1|
+|12    |design_random_inverter_real_1  |     1|
+|13    |design_random_inverter_real_2  |     1|
+|14    |design_random_inverter_real_3  |     1|
+|15    |design_random_inverter_real_4  |     1|
+|16    |design_random_inverter_real_5  |     1|
+|17    |design_random_inverter_real_6  |     1|
+|18    |design_random_inverter_real_7  |     1|
+|19    |design_random_inverter_real_8  |     1|
+|20    |design_random_inverter_real_9  |     1|
+|21    |design_random_nand_module_0    |     1|
+|22    |design_random_nand_module_1    |     1|
+|23    |design_random_nand_module_2    |     1|
+|24    |design_random_nand_module_3    |     1|
+|25    |design_random_nand_module_5    |     1|
+|26    |design_random_nand_module_6    |     1|
+|27    |design_random_xor_3_0          |     1|
+|28    |design_random_xor_4_0          |     1|
+|29    |IBUF                           |     3|
+|30    |OBUF                           |     1|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1591.688 ; gain = 974.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.688 ; gain = 977.102
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1591.688 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6fcdc770
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1591.688 ; gain = 1189.898
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1591.688 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/design_random_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_random_wrapper_utilization_synth.rpt -pb design_random_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 19:29:17 2025...

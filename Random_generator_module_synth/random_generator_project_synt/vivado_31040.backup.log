@@ -1,0 +1,836 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 19 18:15:08 2025
+# Process ID         : 31040
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent19160 C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.xpr
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/vivado.log
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 6257 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.414 ; gain = 157.031
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/mref/inverter_jitter_random/component.xml. It will be created.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 18:31:50 2025...
+r_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_jitter.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_jitter.v
+file delete -force C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_jitter.v
+export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+Reading block design file <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>...
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_0
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_1
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_2
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_3
+Adding component instance block -- xilinx.com:module_ref:xor_4:1.0 - xor_4_0
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_5
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_6
+Adding component instance block -- xilinx.com:module_ref:xor_3:1.0 - xor_3_0
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_0
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_0'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_1
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_1'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_2
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_2'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_3
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_3'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_4
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_4'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_5
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_5'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_6
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_6'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_7
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_7'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_8
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_8'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_9
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_9'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_10
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_10'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_11
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_11'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:inverter_jitter_random:1.0 - inverter_jitter_rand_12
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/inverter_jitter_rand_12'.
+Given inputs for module-source, Top-module name : inverter_jitter_random, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_0
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_1
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_2
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_3
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_4
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_5
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_6
+Successfully read diagram <design_random> from block design file <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>
+open_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1327.930 ; gain = 2.613
+delete_bd_objs [get_bd_nets nand_module_0_out_nand] [get_bd_nets inverter_jitter_rand_0_inv_out] [get_bd_cells inverter_jitter_rand_0]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_1]
+delete_bd_objs [get_bd_nets nand_module_1_out_nand] [get_bd_nets inverter_jitter_rand_2_inv_out] [get_bd_cells inverter_jitter_rand_2]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_3]
+create_bd_cell -type module -reference inverter_real inverter_real_0
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_0_0' is restricted:
+* Detected changes to module reference file(s).
+set_property location {2 231 -466} [get_bd_cells inverter_real_0]
+create_bd_cell -type module -reference inverter_real inverter_real_1
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_1_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins nand_module_0/out_nand] [get_bd_pins inverter_real_0/in_inv]
+connect_bd_net [get_bd_pins inverter_real_0/out_inv] [get_bd_pins inverter_real_1/in_inv]
+connect_bd_net [get_bd_pins inverter_real_1/out_inv] [get_bd_pins nand_module_0/in_nand]
+create_bd_cell -type module -reference inverter_real inverter_real_2
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_2_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference inverter_real inverter_real_3
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_3_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins nand_module_1/out_nand] [get_bd_pins inverter_real_2/in_inv]
+connect_bd_net [get_bd_pins inverter_real_2/out_inv] [get_bd_pins inverter_real_3/in_inv]
+connect_bd_net [get_bd_pins inverter_real_3/out_inv] [get_bd_pins nand_module_1/in_nand]
+delete_bd_objs [get_bd_nets nand_module_2_out_nand] [get_bd_nets inverter_jitter_rand_4_inv_out] [get_bd_cells inverter_jitter_rand_4]
+delete_bd_objs [get_bd_nets inverter_jitter_rand_5_inv_out] [get_bd_cells inverter_jitter_rand_5]
+create_bd_cell -type module -reference inverter_real inverter_real_4
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_4_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference inverter_real inverter_real_5
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_5_0' is restricted:
+* Detected changes to module reference file(s).
+set_property location {2 239 -114} [get_bd_cells inverter_real_4]
+set_property location {3 464 -112} [get_bd_cells inverter_real_5]
+set_property location {2 238 -116} [get_bd_cells inverter_real_4]
+set_property location {3 460 -116} [get_bd_cells inverter_real_5]
+connect_bd_net [get_bd_pins nand_module_2/out_nand] [get_bd_pins inverter_real_4/in_inv]
+connect_bd_net [get_bd_pins inverter_real_4/out_inv] [get_bd_pins inverter_real_5/in_inv]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_8]
+create_bd_cell -type module -reference inverter_real inverter_real_6
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_6_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins inverter_real_5/out_inv] [get_bd_pins inverter_real_6/in_inv]
+connect_bd_net [get_bd_pins inverter_real_6/out_inv] [get_bd_pins nand_module_2/in_nand]
+delete_bd_objs [get_bd_nets nand_module_3_out_nand] [get_bd_nets inverter_jitter_rand_6_inv_out] [get_bd_cells inverter_jitter_rand_6]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_7]
+create_bd_cell -type module -reference inverter_real inverter_real_7
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_7_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference inverter_real inverter_real_8
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_8_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins nand_module_3/out_nand] [get_bd_pins inverter_real_7/in_inv]
+connect_bd_net [get_bd_pins inverter_real_7/out_inv] [get_bd_pins inverter_real_8/in_inv]
+connect_bd_net [get_bd_pins inverter_real_8/out_inv] [get_bd_pins nand_module_3/in_nand]
+delete_bd_objs [get_bd_nets nand_module_5_out_nand] [get_bd_nets inverter_jitter_rand_9_inv_out] [get_bd_cells inverter_jitter_rand_9]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_10]
+create_bd_cell -type module -reference inverter_real inverter_real_9
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_9_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference inverter_real inverter_real_10
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_10_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins nand_module_5/out_nand] [get_bd_pins inverter_real_9/in_inv]
+connect_bd_net [get_bd_pins inverter_real_9/out_inv] [get_bd_pins inverter_real_10/in_inv]
+connect_bd_net [get_bd_pins inverter_real_10/out_inv] [get_bd_pins dff_module1_5/in_dff]
+delete_bd_objs [get_bd_nets nand_module_6_out_nand] [get_bd_nets inverter_jitter_rand_11_inv_out] [get_bd_cells inverter_jitter_rand_11]
+delete_bd_objs [get_bd_cells inverter_jitter_rand_12]
+create_bd_cell -type module -reference inverter_real inverter_real_11
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_11_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference inverter_real inverter_real_12
+WARNING: [IP_Flow 19-3571] IP 'design_random_inverter_real_12_0' is restricted:
+* Detected changes to module reference file(s).
+connect_bd_net [get_bd_pins nand_module_6/out_nand] [get_bd_pins inverter_real_11/in_inv]
+connect_bd_net [get_bd_pins inverter_real_11/out_inv] [get_bd_pins inverter_real_12/in_inv]
+connect_bd_net [get_bd_pins inverter_real_12/out_inv] [get_bd_pins dff_module1_6/in_dff]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_inverter_real_2_0 design_random_inverter_real_9_0 design_random_inverter_real_10_0 design_random_inverter_real_3_0 design_random_inverter_real_0_0 design_random_inverter_real_8_0 design_random_inverter_real_6_0 design_random_inverter_real_4_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_12_0 design_random_inverter_real_5_0 design_random_inverter_real_11_0}]
+Upgrading 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd'
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_10_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_11_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_12_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_4_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_8_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_9_0 to use current project options
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1393.406 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1393.406 ; gain = 0.000
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+make_wrapper: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1401.688 ; gain = 8.281
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_11 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_12 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_9 .
+Exporting to file c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hw_handoff/design_random.hwh
+Generated Hardware Definition File c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -directory C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files -ipstatic_source_dir C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/modelsim} {questa=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/questa} {riviera=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/riviera} {activehdl=C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_design_random'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-12490] The selected simulation model for 'design_random_inverter_real_0_0' IP changed to 'rtl' from '', the simulation run directory will be deleted.
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_design_random' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_design_random_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/nand_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nand_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/xor_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/xor_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/dff_module1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff_module1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_real.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inverter_real
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_0_0/sim/design_random_nand_module_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_1_0/sim/design_random_nand_module_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_2_0/sim/design_random_nand_module_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_3_0/sim/design_random_nand_module_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_xor_4_0_0/sim/design_random_xor_4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_xor_4_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_5_0/sim/design_random_nand_module_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_nand_module_6_0/sim/design_random_nand_module_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_nand_module_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_xor_3_0_0/sim/design_random_xor_3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_xor_3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_0_0/sim/design_random_dff_module1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_1_0/sim/design_random_dff_module1_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_2_0/sim/design_random_dff_module1_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_3_0/sim/design_random_dff_module1_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_4_0/sim/design_random_dff_module1_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_5_0/sim/design_random_dff_module1_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_dff_module1_6_0/sim/design_random_dff_module1_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_dff_module1_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_0_0/sim/design_random_inverter_real_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_10_0/sim/design_random_inverter_real_10_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_10_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_11_0/sim/design_random_inverter_real_11_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_11_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_12_0/sim/design_random_inverter_real_12_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_12_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_1_0/sim/design_random_inverter_real_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_2_0/sim/design_random_inverter_real_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_3_0/sim/design_random_inverter_real_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_4_0/sim/design_random_inverter_real_4_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_4_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_5_0/sim/design_random_inverter_real_5_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_5_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_6_0/sim/design_random_inverter_real_6_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_6_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_7_0/sim/design_random_inverter_real_7_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_7_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_8_0/sim/design_random_inverter_real_8_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/ip/design_random_inverter_real_9_0/sim/design_random_inverter_real_9_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_inverter_real_9_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.ip_user_files/bd/design_random/sim/design_random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_random_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sim_1/new/tb_design_random.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_design_random
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1401.688 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_design_random_behav xil_defaultlib.tb_design_random xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_design_random_behav xil_defaultlib.tb_design_random xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dff_module1
+Compiling module xil_defaultlib.design_random_dff_module1_0_0
+Compiling module xil_defaultlib.design_random_dff_module1_1_0
+Compiling module xil_defaultlib.design_random_dff_module1_2_0
+Compiling module xil_defaultlib.design_random_dff_module1_3_0
+Compiling module xil_defaultlib.design_random_dff_module1_4_0
+Compiling module xil_defaultlib.design_random_dff_module1_5_0
+Compiling module xil_defaultlib.design_random_dff_module1_6_0
+Compiling module xil_defaultlib.inverter_real
+Compiling module xil_defaultlib.design_random_inverter_real_0_0
+Compiling module xil_defaultlib.design_random_inverter_real_1_0
+Compiling module xil_defaultlib.design_random_inverter_real_10_0
+Compiling module xil_defaultlib.design_random_inverter_real_11_0
+Compiling module xil_defaultlib.design_random_inverter_real_12_0
+Compiling module xil_defaultlib.design_random_inverter_real_2_0
+Compiling module xil_defaultlib.design_random_inverter_real_3_0
+Compiling module xil_defaultlib.design_random_inverter_real_4_0
+Compiling module xil_defaultlib.design_random_inverter_real_5_0
+Compiling module xil_defaultlib.design_random_inverter_real_6_0
+Compiling module xil_defaultlib.design_random_inverter_real_7_0
+Compiling module xil_defaultlib.design_random_inverter_real_8_0
+Compiling module xil_defaultlib.design_random_inverter_real_9_0
+Compiling module xil_defaultlib.nand_module
+Compiling module xil_defaultlib.design_random_nand_module_0_0
+Compiling module xil_defaultlib.design_random_nand_module_1_0
+Compiling module xil_defaultlib.design_random_nand_module_2_0
+Compiling module xil_defaultlib.design_random_nand_module_3_0
+Compiling module xil_defaultlib.design_random_nand_module_5_0
+Compiling module xil_defaultlib.design_random_nand_module_6_0
+Compiling module xil_defaultlib.xor_3
+Compiling module xil_defaultlib.design_random_xor_3_0_0
+Compiling module xil_defaultlib.xor_4
+Compiling module xil_defaultlib.design_random_xor_4_0_0
+Compiling module xil_defaultlib.design_random
+Compiling module xil_defaultlib.design_random_wrapper
+Compiling module xil_defaultlib.tb_design_random
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_design_random_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1401.688 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_design_random_behav -key {Behavioral:sim_1:Functional:tb_design_random} -tclbatch {tb_design_random.tcl} -protoinst "protoinst_files/design_random.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_random.protoinst
+Time resolution is 1 ps
+source tb_design_random.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1414.125 ; gain = 12.438
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_design_random_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1414.125 ; gain = 12.438
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs synth_1 -jobs 16
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xor_4_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nand_module_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xor_3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dff_module1_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_11 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_12 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_9 .
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+[Fri Dec 19 18:38:04 2025] Launched design_random_inverter_real_10_0_synth_1, design_random_inverter_real_0_0_synth_1, design_random_nand_module_0_0_synth_1, design_random_nand_module_1_0_synth_1, design_random_nand_module_2_0_synth_1, design_random_nand_module_3_0_synth_1, design_random_xor_4_0_0_synth_1, design_random_nand_module_5_0_synth_1, design_random_nand_module_6_0_synth_1, design_random_dff_module1_0_0_synth_1, design_random_xor_3_0_0_synth_1, design_random_dff_module1_3_0_synth_1, design_random_dff_module1_5_0_synth_1, design_random_dff_module1_1_0_synth_1, design_random_dff_module1_6_0_synth_1, design_random_dff_module1_2_0_synth_1, design_random_dff_module1_4_0_synth_1, design_random_inverter_real_11_0_synth_1, design_random_inverter_real_12_0_synth_1, design_random_inverter_real_2_0_synth_1, design_random_inverter_real_3_0_synth_1, design_random_inverter_real_5_0_synth_1, design_random_inverter_real_1_0_synth_1, design_random_inverter_real_4_0_synth_1, design_random_inverter_real_9_0_synth_1, design_random_inverter_real_6_0_synth_1, design_random_inverter_real_8_0_synth_1, design_random_inverter_real_7_0_synth_1...
+Run output will be captured here:
+design_random_inverter_real_10_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_10_0_synth_1/runme.log
+design_random_inverter_real_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_0_0_synth_1/runme.log
+design_random_nand_module_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_0_0_synth_1/runme.log
+design_random_nand_module_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_1_0_synth_1/runme.log
+design_random_nand_module_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_2_0_synth_1/runme.log
+design_random_nand_module_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_3_0_synth_1/runme.log
+design_random_xor_4_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_xor_4_0_0_synth_1/runme.log
+design_random_nand_module_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_5_0_synth_1/runme.log
+design_random_nand_module_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_nand_module_6_0_synth_1/runme.log
+design_random_dff_module1_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_0_0_synth_1/runme.log
+design_random_xor_3_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_xor_3_0_0_synth_1/runme.log
+design_random_dff_module1_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_3_0_synth_1/runme.log
+design_random_dff_module1_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_5_0_synth_1/runme.log
+design_random_dff_module1_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_1_0_synth_1/runme.log
+design_random_dff_module1_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_6_0_synth_1/runme.log
+design_random_dff_module1_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_2_0_synth_1/runme.log
+design_random_dff_module1_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_4_0_synth_1/runme.log
+design_random_inverter_real_11_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_11_0_synth_1/runme.log
+design_random_inverter_real_12_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_12_0_synth_1/runme.log
+design_random_inverter_real_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_2_0_synth_1/runme.log
+design_random_inverter_real_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_3_0_synth_1/runme.log
+design_random_inverter_real_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_5_0_synth_1/runme.log
+design_random_inverter_real_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_1_0_synth_1/runme.log
+design_random_inverter_real_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_4_0_synth_1/runme.log
+design_random_inverter_real_9_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_9_0_synth_1/runme.log
+design_random_inverter_real_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_6_0_synth_1/runme.log
+design_random_inverter_real_8_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_8_0_synth_1/runme.log
+design_random_inverter_real_7_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_7_0_synth_1/runme.log
+[Fri Dec 19 18:38:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2367.000 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_runs' failed due to earlier errors.
+report_ip_status -name ip_status 
+add_bp {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_real.v} 28
+remove_bps -file {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/new/inverter_real.v} -line 28
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top design_random_wrapper [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+Exporting to file c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/hw_handoff/design_random.hwh
+Generated Hardware Definition File c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.hwdef
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+[Fri Dec 19 18:43:01 2025] Launched design_random_dff_module1_4_0_synth_1, design_random_inverter_real_11_0_synth_1, design_random_inverter_real_12_0_synth_1, design_random_inverter_real_2_0_synth_1, design_random_inverter_real_3_0_synth_1, design_random_inverter_real_5_0_synth_1, design_random_inverter_real_1_0_synth_1, design_random_inverter_real_4_0_synth_1, design_random_inverter_real_9_0_synth_1, design_random_inverter_real_6_0_synth_1, design_random_inverter_real_8_0_synth_1, design_random_inverter_real_7_0_synth_1...
+Run output will be captured here:
+design_random_dff_module1_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_dff_module1_4_0_synth_1/runme.log
+design_random_inverter_real_11_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_11_0_synth_1/runme.log
+design_random_inverter_real_12_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_12_0_synth_1/runme.log
+design_random_inverter_real_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_2_0_synth_1/runme.log
+design_random_inverter_real_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_3_0_synth_1/runme.log
+design_random_inverter_real_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_5_0_synth_1/runme.log
+design_random_inverter_real_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_1_0_synth_1/runme.log
+design_random_inverter_real_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_4_0_synth_1/runme.log
+design_random_inverter_real_9_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_9_0_synth_1/runme.log
+design_random_inverter_real_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_6_0_synth_1/runme.log
+design_random_inverter_real_8_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_8_0_synth_1/runme.log
+design_random_inverter_real_7_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/design_random_inverter_real_7_0_synth_1/runme.log
+[Fri Dec 19 18:43:02 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 2367.000 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sim_1\new\tb_design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+ERROR: [Common 17-180] Spawn failed: No error

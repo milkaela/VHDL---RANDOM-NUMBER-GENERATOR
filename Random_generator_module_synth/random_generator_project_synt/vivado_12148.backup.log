@@ -1,0 +1,120 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 19 18:53:13 2025
+# Process ID         : 12148
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10764 C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project\random_generator_project.xpr
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/vivado.log
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 17385 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1360.727 ; gain = 263.203
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_0_0/design_random_dff_module1_0_0.dcp' for cell 'design_random_i/dff_module1_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_1_0/design_random_dff_module1_1_0.dcp' for cell 'design_random_i/dff_module1_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_2_0/design_random_dff_module1_2_0.dcp' for cell 'design_random_i/dff_module1_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_3_0/design_random_dff_module1_3_0.dcp' for cell 'design_random_i/dff_module1_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_4_0/design_random_dff_module1_4_0.dcp' for cell 'design_random_i/dff_module1_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_5_0/design_random_dff_module1_5_0.dcp' for cell 'design_random_i/dff_module1_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_dff_module1_6_0/design_random_dff_module1_6_0.dcp' for cell 'design_random_i/dff_module1_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_0_0/design_random_inverter_real_0_0.dcp' for cell 'design_random_i/inverter_real_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_1_0/design_random_inverter_real_1_0.dcp' for cell 'design_random_i/inverter_real_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_10_0/design_random_inverter_real_10_0.dcp' for cell 'design_random_i/inverter_real_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_11_0/design_random_inverter_real_11_0.dcp' for cell 'design_random_i/inverter_real_11'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_12_0/design_random_inverter_real_12_0.dcp' for cell 'design_random_i/inverter_real_12'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_2_0/design_random_inverter_real_2_0.dcp' for cell 'design_random_i/inverter_real_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_3_0/design_random_inverter_real_3_0.dcp' for cell 'design_random_i/inverter_real_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_4_0/design_random_inverter_real_4_0.dcp' for cell 'design_random_i/inverter_real_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_5_0/design_random_inverter_real_5_0.dcp' for cell 'design_random_i/inverter_real_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_6_0/design_random_inverter_real_6_0.dcp' for cell 'design_random_i/inverter_real_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_7_0/design_random_inverter_real_7_0.dcp' for cell 'design_random_i/inverter_real_7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_8_0/design_random_inverter_real_8_0.dcp' for cell 'design_random_i/inverter_real_8'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_inverter_real_9_0/design_random_inverter_real_9_0.dcp' for cell 'design_random_i/inverter_real_9'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_0_0/design_random_nand_module_0_0.dcp' for cell 'design_random_i/nand_module_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_1_0/design_random_nand_module_1_0.dcp' for cell 'design_random_i/nand_module_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_2_0/design_random_nand_module_2_0.dcp' for cell 'design_random_i/nand_module_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_3_0/design_random_nand_module_3_0.dcp' for cell 'design_random_i/nand_module_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_5_0/design_random_nand_module_5_0.dcp' for cell 'design_random_i/nand_module_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_nand_module_6_0/design_random_nand_module_6_0.dcp' for cell 'design_random_i/nand_module_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_3_0_0/design_random_xor_3_0_0.dcp' for cell 'design_random_i/xor_3_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.gen/sources_1/bd/design_random/ip/design_random_xor_4_0_0/design_random_xor_4_0_0.dcp' for cell 'design_random_i/xor_4_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1590.613 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Octa476/Desktop/Random_generator_module/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2090.660 ; gain = 673.656
+launch_runs impl_1 -jobs 16
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2643.543 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2643.543 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Fri Dec 19 18:57:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project/random_generator_project.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.160 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2678.160 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2678.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2678.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3026.043 ; gain = 347.883
