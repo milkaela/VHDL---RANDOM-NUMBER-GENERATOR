@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 19 19:51:48 2025
+# Process ID         : 2328
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17544 C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.xpr
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/vivado.log
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 14613 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.xpr
+update_compile_order -fileset sources_1
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_inverter_real_6_0 design_random_inverter_real_2_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_12_0 design_random_inverter_real_9_0 design_random_inverter_real_3_0 design_random_inverter_real_0_0 design_random_inverter_real_4_0 design_random_inverter_real_8_0 design_random_inverter_real_5_0 design_random_inverter_real_10_0 design_random_inverter_real_11_0}]
+export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {in_inv out_inv}]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {inverter_jitter_10_inv_out inverter_jitter_11_inv_out}]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical in_inv]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_inverter_real_6_0 design_random_inverter_real_2_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_12_0 design_random_inverter_real_9_0 design_random_inverter_real_3_0 design_random_inverter_real_0_0 design_random_inverter_real_4_0 design_random_inverter_real_8_0 design_random_inverter_real_5_0 design_random_inverter_real_10_0 design_random_inverter_real_11_0}]
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+get_nets -hierarchical *inv*
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+refresh_design
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical u1/*]
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical design_random_i/*]
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical design_random/*]
+get_nets -hierarchical *
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/*]
+get_nets -hierarchical *
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical {
+    design_random_i/inverter_jitter_10_inv_out
+    design_random_i/inverter_jitter_11_inv_out
+    design_random_i/inverter_jitter_2_inv_out
+    design_random_i/inverter_jitter_7_inv_out
+    design_random_i/inverter_jitter_rand_7_inv_out
+    design_random_i/inverter_jitter_rand_8_inv_out
+}]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/inverter_jitter_7_inv_out]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/*]
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical *]
+set_property target_constrs_file C:/Users/Octa476/Desktop/Random_generator_module_synth/Nexys4DDR_Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+refresh_design

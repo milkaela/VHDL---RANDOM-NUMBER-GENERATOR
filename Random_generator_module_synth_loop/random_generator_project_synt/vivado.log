@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 19 19:51:48 2025
+# Process ID         : 2328
+# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17544 C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.xpr
+# Log file           : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/vivado.log
+# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt\vivado.jou
+# Running On         : DESKTOP-1986M2J
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16829 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25419 MB
+# Available Virtual  : 14613 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.410 ; gain = 236.223
+update_compile_order -fileset sources_1
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+WARNING: [Vivado 12-628] No current design set.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+WARNING: [Vivado 12-628] No current design set.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+WARNING: [Vivado 12-628] No current design set.
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_inverter_real_6_0 design_random_inverter_real_2_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_12_0 design_random_inverter_real_9_0 design_random_inverter_real_3_0 design_random_inverter_real_0_0 design_random_inverter_real_4_0 design_random_inverter_real_8_0 design_random_inverter_real_5_0 design_random_inverter_real_10_0 design_random_inverter_real_11_0}]
+Reading block design file <C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>...
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_0
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_1
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_2
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_3
+Adding component instance block -- xilinx.com:module_ref:xor_4:1.0 - xor_4_0
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_5
+Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_6
+Adding component instance block -- xilinx.com:module_ref:xor_3:1.0 - xor_3_0
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_0
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_1
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_2
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_3
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_4
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_5
+Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_6
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_0
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_1
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_2
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_3
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_4
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_5
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_6
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_7
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_8
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_9
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_10
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_11
+Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_12
+Successfully read diagram <design_random> from block design file <C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>
+Upgrading 'C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd'
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_0'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_10_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_10_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_10'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_11_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_11_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_11'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_12_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_12_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_12'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_1_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_1_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_1'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_2_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_2_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_2'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_3_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_3_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_3'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_4_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_4_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_4'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_5_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_5_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_5'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_6_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_6_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_6'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_7_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_7_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_7'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_8_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_8_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_8'. Its connection to the net 'clk_port_1' has been removed.
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_9_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_9_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk' is not found on the upgraded version of the cell '/inverter_real_9'. Its connection to the net 'clk_port_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_10_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_11_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_12_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_1_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_2_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_3_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_4_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_5_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_6_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_7_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_8_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_9_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1595.902 ; gain = 183.109
+update_module_reference: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1595.902 ; gain = 183.109
+export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/utils_1/imports/synth_1/design_random_wrapper.dcp with file C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/synth_1/design_random_wrapper.dcp
+launch_runs synth_1 -jobs 16
+INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_9 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_11 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_12 .
+Exporting to file c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hw_handoff/design_random.hwh
+Generated Hardware Definition File c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.hwdef
+[Fri Dec 19 19:55:38 2025] Launched design_random_inverter_real_0_0_synth_1, design_random_inverter_real_1_0_synth_1, design_random_inverter_real_3_0_synth_1, design_random_inverter_real_4_0_synth_1, design_random_inverter_real_2_0_synth_1, design_random_inverter_real_5_0_synth_1, design_random_inverter_real_6_0_synth_1, design_random_inverter_real_7_0_synth_1, design_random_inverter_real_9_0_synth_1, design_random_inverter_real_8_0_synth_1, design_random_inverter_real_10_0_synth_1, design_random_inverter_real_11_0_synth_1, design_random_inverter_real_12_0_synth_1...
+Run output will be captured here:
+design_random_inverter_real_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_0_0_synth_1/runme.log
+design_random_inverter_real_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_1_0_synth_1/runme.log
+design_random_inverter_real_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_3_0_synth_1/runme.log
+design_random_inverter_real_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_4_0_synth_1/runme.log
+design_random_inverter_real_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_2_0_synth_1/runme.log
+design_random_inverter_real_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_5_0_synth_1/runme.log
+design_random_inverter_real_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_6_0_synth_1/runme.log
+design_random_inverter_real_7_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_7_0_synth_1/runme.log
+design_random_inverter_real_9_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_9_0_synth_1/runme.log
+design_random_inverter_real_8_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_8_0_synth_1/runme.log
+design_random_inverter_real_10_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_10_0_synth_1/runme.log
+design_random_inverter_real_11_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_11_0_synth_1/runme.log
+design_random_inverter_real_12_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_12_0_synth_1/runme.log
+[Fri Dec 19 19:55:39 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1595.902 ; gain = 0.000
+launch_runs impl_1 -jobs 16
+[Fri Dec 19 19:57:48 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1716.828 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1813.383 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2392.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2392.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2836.191 ; gain = 1240.289
+set_property ALLOW_COMBINATORIAL_LOOPS true [current_design]
+ERROR: [Netlist 29-69] Cannot set property 'ALLOW_COMBINATORIAL_LOOPS', because the property does not exist for objects of type 'design'.
+Resolution: Modify .xdc or RTL to not set this property or move it to one of the following object types that can accept this property: net,bd_intf_net,bd_intf_pin,bd_pin,diagram,bd_intf_port,bd_port,bd_intf_tlm_port,bd_tlm_port,bd_net
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {in_inv out_inv}]
+WARNING: [Vivado 12-507] No nets matched 'in_inv'.
+WARNING: [Vivado 12-507] No nets matched 'out_inv'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets {inverter_jitter_10_inv_out inverter_jitter_11_inv_out}]
+WARNING: [Vivado 12-507] No nets matched 'inverter_jitter_10_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'inverter_jitter_11_inv_out'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical in_inv]
+WARNING: [Vivado 12-507] No nets matched 'in_inv'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+report_ip_status -name ip_status 
+update_module_reference [get_ips  {design_random_inverter_real_6_0 design_random_inverter_real_2_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_12_0 design_random_inverter_real_9_0 design_random_inverter_real_3_0 design_random_inverter_real_0_0 design_random_inverter_real_4_0 design_random_inverter_real_8_0 design_random_inverter_real_5_0 design_random_inverter_real_10_0 design_random_inverter_real_11_0}]
+Upgrading 'C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd'
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_10_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_11_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_12_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_3_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_4_0 to use current project options
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_5_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_6_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_7_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_8_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_9_0 to use current project options
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3136.391 ; gain = 0.000
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3136.391 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+export_ip_user_files -of_objects  [get_files c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+file delete -force c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
+Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/utils_1/imports/synth_1/design_random_wrapper.dcp with file C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/synth_1/design_random_wrapper.dcp
+launch_runs synth_1 -jobs 16
+INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
+Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_9 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_11 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_12 .
+Exporting to file c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hw_handoff/design_random.hwh
+Generated Hardware Definition File c:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.hwdef
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs synth_1 -jobs 16
+[Fri Dec 19 20:08:32 2025] Launched design_random_inverter_real_0_0_synth_1, design_random_inverter_real_1_0_synth_1, design_random_inverter_real_3_0_synth_1, design_random_inverter_real_4_0_synth_1, design_random_inverter_real_2_0_synth_1, design_random_inverter_real_5_0_synth_1, design_random_inverter_real_6_0_synth_1, design_random_inverter_real_7_0_synth_1, design_random_inverter_real_9_0_synth_1, design_random_inverter_real_8_0_synth_1, design_random_inverter_real_10_0_synth_1, design_random_inverter_real_11_0_synth_1, design_random_inverter_real_12_0_synth_1...
+Run output will be captured here:
+design_random_inverter_real_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_0_0_synth_1/runme.log
+design_random_inverter_real_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_1_0_synth_1/runme.log
+design_random_inverter_real_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_3_0_synth_1/runme.log
+design_random_inverter_real_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_4_0_synth_1/runme.log
+design_random_inverter_real_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_2_0_synth_1/runme.log
+design_random_inverter_real_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_5_0_synth_1/runme.log
+design_random_inverter_real_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_6_0_synth_1/runme.log
+design_random_inverter_real_7_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_7_0_synth_1/runme.log
+design_random_inverter_real_9_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_9_0_synth_1/runme.log
+design_random_inverter_real_8_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_8_0_synth_1/runme.log
+design_random_inverter_real_10_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_10_0_synth_1/runme.log
+design_random_inverter_real_11_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_11_0_synth_1/runme.log
+design_random_inverter_real_12_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_12_0_synth_1/runme.log
+[Fri Dec 19 20:08:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/synth_1/runme.log
+open_bd_design {C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -jobs 16
+[Fri Dec 19 20:10:54 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
+get_nets -hierarchical *inv*
+design_random_i/inverter_jitter_10_inv_out design_random_i/inverter_jitter_11_inv_out design_random_i/inverter_jitter_2_inv_out design_random_i/inverter_jitter_7_inv_out design_random_i/inverter_jitter_rand_7_inv_out design_random_i/inverter_jitter_rand_8_inv_out design_random_i/inverter_real_1/out_inv design_random_i/inverter_real_10/out_inv design_random_i/inverter_real_12/out_inv design_random_i/inverter_real_3/out_inv design_random_i/inverter_real_6/out_inv design_random_i/inverter_real_8/out_inv
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3209.445 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3209.445 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3209.445 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3209.445 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3363.352 ; gain = 226.961
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical u1/*]
+WARNING: [Vivado 12-507] No nets matched 'u1/*'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical design_random_i/*]
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/*'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true \
+    [get_nets -hierarchical design_random/*]
+WARNING: [Vivado 12-507] No nets matched 'design_random/*'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+get_nets -hierarchical *
+clk_port clk_port_IBUF en0_port en0_port_IBUF en1_port en1_port_IBUF out_port out_port_OBUF design_random_i/clk_port design_random_i/dff_module1_0_out_dff design_random_i/dff_module1_1_out_dff design_random_i/dff_module1_2_out_dff design_random_i/dff_module1_3_out_dff design_random_i/dff_module1_5_out_dff design_random_i/dff_module1_6_out_dff design_random_i/en0_port design_random_i/en1_port design_random_i/inverter_jitter_10_inv_out design_random_i/inverter_jitter_11_inv_out design_random_i/inverter_jitter_2_inv_out design_random_i/inverter_jitter_7_inv_out design_random_i/inverter_jitter_rand_7_inv_out design_random_i/inverter_jitter_rand_8_inv_out design_random_i/inverter_real_0_out_inv design_random_i/inverter_real_11_out_inv design_random_i/inverter_real_2_out_inv design_random_i/inverter_real_4_out_inv design_random_i/inverter_real_5_out_inv design_random_i/inverter_real_7_out_inv design_random_i/inverter_real_9_out_inv design_random_i/nand_module_0_out_nand design_random_i/nand_module_1_out_nand design_random_i/nand_module_2_out_nand design_random_i/nand_module_3_out_nand design_random_i/nand_module_5_out_nand design_random_i/nand_module_6_out_nand design_random_i/out_port design_random_i/xor_3_0_out_xor design_random_i/xor_4_0_out design_random_i/dff_module1_0/clk design_random_i/dff_module1_0/in_dff design_random_i/dff_module1_0/out_dff design_random_i/dff_module1_0/inst/<const0> design_random_i/dff_module1_0/inst/<const1> design_random_i/dff_module1_0/inst/clk design_random_i/dff_module1_0/inst/in_dff design_random_i/dff_module1_0/inst/out_dff design_random_i/dff_module1_1/clk design_random_i/dff_module1_1/in_dff design_random_i/dff_module1_1/out_dff design_random_i/dff_module1_1/inst/<const0> design_random_i/dff_module1_1/inst/<const1> design_random_i/dff_module1_1/inst/clk design_random_i/dff_module1_1/inst/in_dff design_random_i/dff_module1_1/inst/out_dff design_random_i/dff_module1_2/clk design_random_i/dff_module1_2/in_dff design_random_i/dff_module1_2/out_dff design_random_i/dff_module1_2/inst/<const0> design_random_i/dff_module1_2/inst/<const1> design_random_i/dff_module1_2/inst/clk design_random_i/dff_module1_2/inst/in_dff design_random_i/dff_module1_2/inst/out_dff design_random_i/dff_module1_3/clk design_random_i/dff_module1_3/in_dff design_random_i/dff_module1_3/out_dff design_random_i/dff_module1_3/inst/<const0> design_random_i/dff_module1_3/inst/<const1> design_random_i/dff_module1_3/inst/clk design_random_i/dff_module1_3/inst/in_dff design_random_i/dff_module1_3/inst/out_dff design_random_i/dff_module1_4/clk design_random_i/dff_module1_4/in_dff design_random_i/dff_module1_4/out_dff design_random_i/dff_module1_4/inst/<const0> design_random_i/dff_module1_4/inst/<const1> design_random_i/dff_module1_4/inst/clk design_random_i/dff_module1_4/inst/in_dff design_random_i/dff_module1_4/inst/out_dff design_random_i/dff_module1_5/clk design_random_i/dff_module1_5/in_dff design_random_i/dff_module1_5/out_dff design_random_i/dff_module1_5/inst/<const0> design_random_i/dff_module1_5/inst/<const1> design_random_i/dff_module1_5/inst/clk design_random_i/dff_module1_5/inst/in_dff design_random_i/dff_module1_5/inst/out_dff design_random_i/dff_module1_6/clk design_random_i/dff_module1_6/in_dff design_random_i/dff_module1_6/out_dff design_random_i/dff_module1_6/inst/<const0> design_random_i/dff_module1_6/inst/<const1> design_random_i/dff_module1_6/inst/clk design_random_i/dff_module1_6/inst/in_dff design_random_i/dff_module1_6/inst/out_dff design_random_i/inverter_real_0/out_inv design_random_i/inverter_real_1/out_inv design_random_i/inverter_real_10/out_inv design_random_i/inverter_real_11/out_inv design_random_i/inverter_real_12/out_inv design_random_i/inverter_real_2/out_inv design_random_i/inverter_real_3/out_inv design_random_i/inverter_real_4/out_inv design_random_i/inverter_real_5/out_inv design_random_i/inverter_real_6/out_inv design_random_i/inverter_real_7/out_inv design_random_i/inverter_real_8/out_inv design_random_i/inverter_real_9/in_inv design_random_i/nand_module_0/en0 design_random_i/nand_module_0/in_nand design_random_i/nand_module_0/out_nand design_random_i/nand_module_1/en0 design_random_i/nand_module_1/in_nand design_random_i/nand_module_1/out_nand design_random_i/nand_module_2/en0 design_random_i/nand_module_2/in_nand design_random_i/nand_module_2/out_nand design_random_i/nand_module_3/en0 design_random_i/nand_module_3/in_nand design_random_i/nand_module_3/out_nand design_random_i/nand_module_5/en0 design_random_i/nand_module_5/in_nand design_random_i/nand_module_5/out_nand design_random_i/nand_module_6/en0 design_random_i/nand_module_6/in_nand design_random_i/nand_module_6/out_nand design_random_i/xor_3_0/out_xor design_random_i/xor_3_0/x design_random_i/xor_3_0/y design_random_i/xor_3_0/z design_random_i/xor_3_0/inst/out_xor design_random_i/xor_3_0/inst/x design_random_i/xor_3_0/inst/y design_random_i/xor_3_0/inst/z design_random_i/xor_4_0/out_xor design_random_i/xor_4_0/w design_random_i/xor_4_0/x design_random_i/xor_4_0/y design_random_i/xor_4_0/z design_random_i/xor_4_0/inst/out_xor design_random_i/xor_4_0/inst/w design_random_i/xor_4_0/inst/x design_random_i/xor_4_0/inst/y design_random_i/xor_4_0/inst/z
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/*]
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/*'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+get_nets -hierarchical *
+clk_port clk_port_IBUF en0_port en0_port_IBUF en1_port en1_port_IBUF out_port out_port_OBUF design_random_i/clk_port design_random_i/dff_module1_0_out_dff design_random_i/dff_module1_1_out_dff design_random_i/dff_module1_2_out_dff design_random_i/dff_module1_3_out_dff design_random_i/dff_module1_5_out_dff design_random_i/dff_module1_6_out_dff design_random_i/en0_port design_random_i/en1_port design_random_i/inverter_jitter_10_inv_out design_random_i/inverter_jitter_11_inv_out design_random_i/inverter_jitter_2_inv_out design_random_i/inverter_jitter_7_inv_out design_random_i/inverter_jitter_rand_7_inv_out design_random_i/inverter_jitter_rand_8_inv_out design_random_i/inverter_real_0_out_inv design_random_i/inverter_real_11_out_inv design_random_i/inverter_real_2_out_inv design_random_i/inverter_real_4_out_inv design_random_i/inverter_real_5_out_inv design_random_i/inverter_real_7_out_inv design_random_i/inverter_real_9_out_inv design_random_i/nand_module_0_out_nand design_random_i/nand_module_1_out_nand design_random_i/nand_module_2_out_nand design_random_i/nand_module_3_out_nand design_random_i/nand_module_5_out_nand design_random_i/nand_module_6_out_nand design_random_i/out_port design_random_i/xor_3_0_out_xor design_random_i/xor_4_0_out design_random_i/dff_module1_0/clk design_random_i/dff_module1_0/in_dff design_random_i/dff_module1_0/out_dff design_random_i/dff_module1_0/inst/<const0> design_random_i/dff_module1_0/inst/<const1> design_random_i/dff_module1_0/inst/clk design_random_i/dff_module1_0/inst/in_dff design_random_i/dff_module1_0/inst/out_dff design_random_i/dff_module1_1/clk design_random_i/dff_module1_1/in_dff design_random_i/dff_module1_1/out_dff design_random_i/dff_module1_1/inst/<const0> design_random_i/dff_module1_1/inst/<const1> design_random_i/dff_module1_1/inst/clk design_random_i/dff_module1_1/inst/in_dff design_random_i/dff_module1_1/inst/out_dff design_random_i/dff_module1_2/clk design_random_i/dff_module1_2/in_dff design_random_i/dff_module1_2/out_dff design_random_i/dff_module1_2/inst/<const0> design_random_i/dff_module1_2/inst/<const1> design_random_i/dff_module1_2/inst/clk design_random_i/dff_module1_2/inst/in_dff design_random_i/dff_module1_2/inst/out_dff design_random_i/dff_module1_3/clk design_random_i/dff_module1_3/in_dff design_random_i/dff_module1_3/out_dff design_random_i/dff_module1_3/inst/<const0> design_random_i/dff_module1_3/inst/<const1> design_random_i/dff_module1_3/inst/clk design_random_i/dff_module1_3/inst/in_dff design_random_i/dff_module1_3/inst/out_dff design_random_i/dff_module1_4/clk design_random_i/dff_module1_4/in_dff design_random_i/dff_module1_4/out_dff design_random_i/dff_module1_4/inst/<const0> design_random_i/dff_module1_4/inst/<const1> design_random_i/dff_module1_4/inst/clk design_random_i/dff_module1_4/inst/in_dff design_random_i/dff_module1_4/inst/out_dff design_random_i/dff_module1_5/clk design_random_i/dff_module1_5/in_dff design_random_i/dff_module1_5/out_dff design_random_i/dff_module1_5/inst/<const0> design_random_i/dff_module1_5/inst/<const1> design_random_i/dff_module1_5/inst/clk design_random_i/dff_module1_5/inst/in_dff design_random_i/dff_module1_5/inst/out_dff design_random_i/dff_module1_6/clk design_random_i/dff_module1_6/in_dff design_random_i/dff_module1_6/out_dff design_random_i/dff_module1_6/inst/<const0> design_random_i/dff_module1_6/inst/<const1> design_random_i/dff_module1_6/inst/clk design_random_i/dff_module1_6/inst/in_dff design_random_i/dff_module1_6/inst/out_dff design_random_i/inverter_real_0/out_inv design_random_i/inverter_real_1/out_inv design_random_i/inverter_real_10/out_inv design_random_i/inverter_real_11/out_inv design_random_i/inverter_real_12/out_inv design_random_i/inverter_real_2/out_inv design_random_i/inverter_real_3/out_inv design_random_i/inverter_real_4/out_inv design_random_i/inverter_real_5/out_inv design_random_i/inverter_real_6/out_inv design_random_i/inverter_real_7/out_inv design_random_i/inverter_real_8/out_inv design_random_i/inverter_real_9/in_inv design_random_i/nand_module_0/en0 design_random_i/nand_module_0/in_nand design_random_i/nand_module_0/out_nand design_random_i/nand_module_1/en0 design_random_i/nand_module_1/in_nand design_random_i/nand_module_1/out_nand design_random_i/nand_module_2/en0 design_random_i/nand_module_2/in_nand design_random_i/nand_module_2/out_nand design_random_i/nand_module_3/en0 design_random_i/nand_module_3/in_nand design_random_i/nand_module_3/out_nand design_random_i/nand_module_5/en0 design_random_i/nand_module_5/in_nand design_random_i/nand_module_5/out_nand design_random_i/nand_module_6/en0 design_random_i/nand_module_6/in_nand design_random_i/nand_module_6/out_nand design_random_i/xor_3_0/out_xor design_random_i/xor_3_0/x design_random_i/xor_3_0/y design_random_i/xor_3_0/z design_random_i/xor_3_0/inst/out_xor design_random_i/xor_3_0/inst/x design_random_i/xor_3_0/inst/y design_random_i/xor_3_0/inst/z design_random_i/xor_4_0/out_xor design_random_i/xor_4_0/w design_random_i/xor_4_0/x design_random_i/xor_4_0/y design_random_i/xor_4_0/z design_random_i/xor_4_0/inst/out_xor design_random_i/xor_4_0/inst/w design_random_i/xor_4_0/inst/x design_random_i/xor_4_0/inst/y design_random_i/xor_4_0/inst/z
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical {
+    design_random_i/inverter_jitter_10_inv_out
+    design_random_i/inverter_jitter_11_inv_out
+    design_random_i/inverter_jitter_2_inv_out
+    design_random_i/inverter_jitter_7_inv_out
+    design_random_i/inverter_jitter_rand_7_inv_out
+    design_random_i/inverter_jitter_rand_8_inv_out
+}]
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_10_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_11_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_2_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_7_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_rand_7_inv_out'.
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_rand_8_inv_out'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/inverter_jitter_7_inv_out]
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/inverter_jitter_7_inv_out'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical design_random_i/*]
+WARNING: [Vivado 12-507] No nets matched 'design_random_i/*'.
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+set_property ALLOW_COMBINATORIAL_LOOPS true [get_nets -hierarchical *]
+set_property target_constrs_file C:/Users/Octa476/Desktop/Random_generator_module_synth/Nexys4DDR_Master.xdc [current_fileset -constrset]
+save_constraints -force
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\Octa476\Desktop\Random_generator_module_synth\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\synth\design_random.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Dec 19 20:22:24 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Octa476/Desktop/Random_generator_module_synth/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3385.250 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3385.250 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3385.250 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3385.250 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3490.879 ; gain = 118.191
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 20:24:19 2025...

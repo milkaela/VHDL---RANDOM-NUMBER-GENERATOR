@@ -1,358 +1,96 @@
 #-----------------------------------------------------------
-# Vivado v2024.2 (64-bit)
-# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
-# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Dec 19 19:02:45 2025
-# Process ID         : 17176
-# Current directory  : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent19732 C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.xpr
-# Log file           : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/vivado.log
-# Journal file       : C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt\vivado.jou
-# Running On         : DESKTOP-1986M2J
-# Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26200
-# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
-# CPU Frequency      : 3110 MHz
-# CPU Physical cores : 12
-# CPU Logical cores  : 16
-# Host memory        : 16829 MB
-# Swap memory        : 8589 MB
-# Total Virtual      : 25419 MB
-# Available Virtual  : 17214 MB
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Dec 19 19:41:56 2025
+# Process ID: 23888
+# Current directory: C:/Users/Alexandra/Desktop/VHDL---RANDOM-NUMBER-GENERATOR/Random_generator_module_synth/random_generator_project_synt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19536 C:\Users\Alexandra\Desktop\VHDL---RANDOM-NUMBER-GENERATOR\Random_generator_module_synth\random_generator_project_synt\random_generator_project.xpr
+# Log file: C:/Users/Alexandra/Desktop/VHDL---RANDOM-NUMBER-GENERATOR/Random_generator_module_synth/random_generator_project_synt/vivado.log
+# Journal file: C:/Users/Alexandra/Desktop/VHDL---RANDOM-NUMBER-GENERATOR/Random_generator_module_synth/random_generator_project_synt\vivado.jou
+# Running On: DESKTOP-MU5Q6FH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 16857 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project' since last save.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1351.953 ; gain = 230.629
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Fri Dec 19 19:04:33 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:55 . Memory (MB): peak = 1377.785 ; gain = 0.012
-update_compile_order -fileset sources_1
-reset_run impl_1
-launch_runs impl_1 -jobs 16
-[Fri Dec 19 19:05:57 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1592.051 ; gain = 0.000
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1682.902 ; gain = 0.051
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2266.336 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.336 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2612.887 ; gain = 1203.598
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Fri Dec 19 19:07:21 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Fri Dec 19 19:08:30 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Fri Dec 19 19:09:11 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-reset_run impl_1
-launch_runs impl_1 -jobs 16
-[Fri Dec 19 19:13:33 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd]
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.223 ; gain = 0.000
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2646.223 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2646.223 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2646.223 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2646.223 ; gain = 13.707
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-report_ip_status -name ip_status 
-update_module_reference [get_ips  {design_random_inverter_real_9_0 design_random_inverter_real_4_0 design_random_inverter_real_0_0 design_random_inverter_real_5_0 design_random_inverter_real_6_0 design_random_inverter_real_11_0 design_random_inverter_real_1_0 design_random_inverter_real_7_0 design_random_inverter_real_10_0 design_random_inverter_real_2_0 design_random_inverter_real_12_0 design_random_inverter_real_3_0 design_random_inverter_real_8_0}]
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
-WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
-WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
-Reading block design file <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>...
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_0
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_1
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_2
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_3
-Adding component instance block -- xilinx.com:module_ref:xor_4:1.0 - xor_4_0
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_5
-Adding component instance block -- xilinx.com:module_ref:nand_module:1.0 - nand_module_6
-Adding component instance block -- xilinx.com:module_ref:xor_3:1.0 - xor_3_0
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_0
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_1
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_2
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_3
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_4
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_5
-Adding component instance block -- xilinx.com:module_ref:dff_module1:1.0 - dff_module1_6
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_0
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_1
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_2
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_3
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_4
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_5
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_6
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_7
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_8
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_9
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_10
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_11
-Adding component instance block -- xilinx.com:module_ref:inverter_real:1.0 - inverter_real_12
-Successfully read diagram <design_random> from block design file <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd>
-Upgrading 'C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd'
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-ERROR: [Common 17-39] 'reset_runs' failed due to earlier errors.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_0_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_0_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_10_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_10_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_11_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_11_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_12_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_12_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_1_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_1_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_2_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_2_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_3_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_3_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_4_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_4_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_5_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_5_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_6_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_6_0'. These changes may impact your design.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\inverter_real.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_7_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_7_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_8_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_8_0'. These changes may impact your design.
-INFO: [IP_Flow 19-3420] Updated design_random_inverter_real_9_0 to use current project options
-WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_random_inverter_real_9_0'. These changes may impact your design.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_10_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_11_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_12_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_1_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_2_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_3_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_4_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_5_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_6_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_7_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_8_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_random_inverter_real_9_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
-Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
-Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
-upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2714.863 ; gain = 43.742
-update_module_reference: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2714.863 ; gain = 43.742
-ERROR: [Common 17-180] Spawn failed: No error
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_0/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_1/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_2/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_3/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_4/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_7/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_8/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_5/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_9/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_10/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_12/clk]
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_11/clk]
-save_bd_design
-Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
-Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
-reset_run synth_1
-INFO: [Project 1-1160] Copying file C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/design_random_wrapper.dcp to C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-launch_runs synth_1 -jobs 16
-ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
-/inverter_real_6/clk
-
-ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd 
-ERROR: [Common 17-180] Spawn failed: No error
-ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\new\dff_module1.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.gen\sources_1\bd\design_random\hdl\design_random_wrapper.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-export_ip_user_files -of_objects  [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v] -no_script -reset -force -quiet
-remove_files  C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
-file delete -force C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
-make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
-ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
-/inverter_real_6/clk
-
-ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd 
-ERROR: [Common 17-39] 'make_wrapper' failed due to earlier errors.
-update_compile_order -fileset sources_1
-connect_bd_net [get_bd_ports clk_port] [get_bd_pins inverter_real_6/clk]
-save_bd_design
-Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
-Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
-make_wrapper -files [get_files C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/design_random.bd] -top
-Wrote  : <C:\Users\Octa476\Desktop\Random_generator_module\random_generator_project_synt\random_generator_project.srcs\sources_1\bd\design_random\design_random.bd> 
-Wrote  : <C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.srcs/sources_1/bd/design_random/ui/bd_32dbe44.ui> 
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
-add_files -norecurse c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 16
-INFO: [BD 41-1662] The design 'design_random.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.v
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/sim/design_random.v
-Verilog Output written to : c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hdl/design_random_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_2 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_3 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_4 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_5 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_6 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_7 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_8 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_9 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_11 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block inverter_real_12 .
-Exporting to file c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/hw_handoff/design_random.hwh
-Generated Hardware Definition File c:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.gen/sources_1/bd/design_random/synth/design_random.hwdef
-[Fri Dec 19 19:27:04 2025] Launched design_random_inverter_real_6_0_synth_1, design_random_inverter_real_8_0_synth_1, design_random_inverter_real_10_0_synth_1, design_random_inverter_real_2_0_synth_1, design_random_inverter_real_3_0_synth_1, design_random_inverter_real_1_0_synth_1, design_random_inverter_real_4_0_synth_1, design_random_inverter_real_5_0_synth_1, design_random_inverter_real_0_0_synth_1, design_random_inverter_real_7_0_synth_1, design_random_inverter_real_9_0_synth_1, design_random_inverter_real_12_0_synth_1, design_random_inverter_real_11_0_synth_1...
-Run output will be captured here:
-design_random_inverter_real_6_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_6_0_synth_1/runme.log
-design_random_inverter_real_8_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_8_0_synth_1/runme.log
-design_random_inverter_real_10_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_10_0_synth_1/runme.log
-design_random_inverter_real_2_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_2_0_synth_1/runme.log
-design_random_inverter_real_3_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_3_0_synth_1/runme.log
-design_random_inverter_real_1_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_1_0_synth_1/runme.log
-design_random_inverter_real_4_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_4_0_synth_1/runme.log
-design_random_inverter_real_5_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_5_0_synth_1/runme.log
-design_random_inverter_real_0_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_0_0_synth_1/runme.log
-design_random_inverter_real_7_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_7_0_synth_1/runme.log
-design_random_inverter_real_9_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_9_0_synth_1/runme.log
-design_random_inverter_real_12_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_12_0_synth_1/runme.log
-design_random_inverter_real_11_0_synth_1: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/design_random_inverter_real_11_0_synth_1/runme.log
-[Fri Dec 19 19:27:04 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2734.688 ; gain = 5.730
-launch_runs impl_1 -jobs 16
-[Fri Dec 19 19:29:24 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 16
-[Fri Dec 19 19:30:31 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Octa476/Desktop/Random_generator_module/random_generator_project_synt/random_generator_project.runs/impl_1/runme.log
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 19:32:09 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 20:26:36 2025...

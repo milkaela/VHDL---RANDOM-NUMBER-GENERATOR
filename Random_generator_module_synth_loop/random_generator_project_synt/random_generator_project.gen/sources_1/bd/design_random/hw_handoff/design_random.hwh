@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 19 20:07:29 2025" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_random" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk_port" SIGIS="undef" SIGNAME="External_Ports_clk_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dff_module1_0" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_1" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_2" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_3" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_4" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_5" PORT="clk"/>
+        <CONNECTION INSTANCE="dff_module1_6" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="en0_port" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nand_module_0" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_1" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_2" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_3" PORT="en0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="en1_port" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nand_module_5" PORT="en0"/>
+        <CONNECTION INSTANCE="nand_module_6" PORT="en0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="out_port" SIGIS="undef" SIGNAME="dff_module1_4_out_dff">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="dff_module1_4" PORT="out_dff"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_0" HWVERSION="1.0" INSTANCE="dff_module1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_1_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_1" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_0_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_1" HWVERSION="1.0" INSTANCE="dff_module1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_3_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_3" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_1_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_2" HWVERSION="1.0" INSTANCE="dff_module1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_6_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_6" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_2_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="z"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_3" HWVERSION="1.0" INSTANCE="dff_module1_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_8_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_8" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_3_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="w"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_4" HWVERSION="1.0" INSTANCE="dff_module1_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="xor_3_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="out_xor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_4_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="out_port"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_5" HWVERSION="1.0" INSTANCE="dff_module1_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_10_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_10" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_5_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/dff_module1_6" HWVERSION="1.0" INSTANCE="dff_module1_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dff_module1" VLNV="xilinx.com:module_ref:dff_module1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_dff_module1_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_dff" SIGIS="undef" SIGNAME="inverter_real_12_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_12" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_dff" SIGIS="undef" SIGNAME="dff_module1_6_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="z"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_0" HWVERSION="1.0" INSTANCE="inverter_real_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_0_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_0" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_0_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_1" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_1" HWVERSION="1.0" INSTANCE="inverter_real_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_0_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_0" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_1_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_0" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_0" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_10" HWVERSION="1.0" INSTANCE="inverter_real_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_10_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_9_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_9" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_10_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_5" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_5" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_11" HWVERSION="1.0" INSTANCE="inverter_real_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_11_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_6_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_6" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_11_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_12" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_12" HWVERSION="1.0" INSTANCE="inverter_real_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_12_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_11_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_11" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_12_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_6" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_6" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_2" HWVERSION="1.0" INSTANCE="inverter_real_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_1_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_1" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_2_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_3" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_3" HWVERSION="1.0" INSTANCE="inverter_real_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_2_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_2" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_3_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_1" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_1" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_4" HWVERSION="1.0" INSTANCE="inverter_real_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_2_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_2" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_4_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_5" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_5" HWVERSION="1.0" INSTANCE="inverter_real_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_4_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_4" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_5_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_6" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_6" HWVERSION="1.0" INSTANCE="inverter_real_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_5_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_5" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_6_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_2" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_2" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_7" HWVERSION="1.0" INSTANCE="inverter_real_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_3_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_3" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_7_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_8" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_8" HWVERSION="1.0" INSTANCE="inverter_real_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_8_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="inverter_real_7_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_7" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_8_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_3" PORT="in_nand"/>
+            <CONNECTION INSTANCE="dff_module1_3" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_real_9" HWVERSION="1.0" INSTANCE="inverter_real_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter_real" VLNV="xilinx.com:module_ref:inverter_real:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_inverter_real_9_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="in_inv" SIGIS="undef" SIGNAME="nand_module_5_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nand_module_5" PORT="out_nand"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_inv" SIGIS="undef" SIGNAME="inverter_real_9_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_10" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_0" HWVERSION="1.0" INSTANCE="nand_module_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_1_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_1" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_0_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_0" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_1" HWVERSION="1.0" INSTANCE="nand_module_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_3_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_3" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_1_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_2" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_2" HWVERSION="1.0" INSTANCE="nand_module_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_6_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_6" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_2_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_4" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_3" HWVERSION="1.0" INSTANCE="nand_module_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en0_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en0_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_8_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_8" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_3_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_7" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_5" HWVERSION="1.0" INSTANCE="nand_module_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en1_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_10_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_10" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_5_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_9" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/nand_module_6" HWVERSION="1.0" INSTANCE="nand_module_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nand_module" VLNV="xilinx.com:module_ref:nand_module:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_nand_module_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="en0" SIGIS="undef" SIGNAME="External_Ports_en1_port">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="en1_port"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="in_nand" SIGIS="undef" SIGNAME="inverter_real_12_out_inv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_12" PORT="out_inv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_nand" SIGIS="undef" SIGNAME="nand_module_6_out_nand">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="inverter_real_11" PORT="in_inv"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xor_3_0" HWVERSION="1.0" INSTANCE="xor_3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xor_3" VLNV="xilinx.com:module_ref:xor_3:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_xor_3_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="out_xor" SIGIS="undef" SIGNAME="xor_3_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_4" PORT="in_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="dff_module1_5_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_5" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="xor_4_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_4_0" PORT="out_xor"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="z" SIGIS="undef" SIGNAME="dff_module1_6_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_6" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xor_4_0" HWVERSION="1.0" INSTANCE="xor_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xor_4" VLNV="xilinx.com:module_ref:xor_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_random_xor_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="out_xor" SIGIS="undef" SIGNAME="xor_4_0_out_xor">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xor_3_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="w" SIGIS="undef" SIGNAME="dff_module1_3_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_3" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="x" SIGIS="undef" SIGNAME="dff_module1_0_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_0" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="y" SIGIS="undef" SIGNAME="dff_module1_1_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_1" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="z" SIGIS="undef" SIGNAME="dff_module1_2_out_dff">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dff_module1_2" PORT="out_dff"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
